@@ -17,9 +17,9 @@ public:
 	void updateWeights();
 	void train(std::vector<RowVector*> data);
 
-	std::vector<RowVector*> neuronLayers; // stores the different layers of out network
-	std::vector<RowVector*> cacheLayers; // stores the unactivated (activation fn not yet applied) values of layers
-	std::vector<RowVector*> deltas; // stores the error contribution of each neurons
-	std::vector<Matrix*> weights; // the connection weights itself
+	std::vector<RowVector*> neuronLayers; 
+	std::vector<RowVector*> cacheLayers; 
+	std::vector<RowVector*> deltas; 
+	std::vector<Matrix*> weights;
 	Scalar learningRate;
 };
